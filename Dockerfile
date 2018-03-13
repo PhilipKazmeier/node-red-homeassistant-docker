@@ -1,3 +1,5 @@
 FROM nodered/node-red-docker:latest
 
-RUN npm install node-red-contrib-home-assistant
+COPY package.json /usr/src/node-red/
+
+RUN npm install
