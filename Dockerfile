@@ -1,3 +1,3 @@
-FROM nodered/node-red-docker:latest
+FROM nodered/node-red-docker:slim-v8
 
-RUN npm install node-red-contrib-home-assistant@0.2.1
+RUN npm install node-red-contrib-home-assistant
